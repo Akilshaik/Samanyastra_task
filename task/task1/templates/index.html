@@ -3,16 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1> Here we rendering an html file</h1>
-    <button><a href="/health/">View Health</a> </button><br>
-    <button><a href="/persons/">View Persons</a></button><br>
-    <button><a href="/api/v1/home/">Rest frame work</a> </button><br>
-
-    
-
-
+    <h1>Rendering an HTML File</h1>
+    <p> Here First we render an html file with the helf of render function</p>
+    <hr>
+    <p> Here we use JsonResponse function to return a json data</p>
+    <a href="/health/" class="button">View Health</a><br>
+    <hr>
+    <p> Here We create a persons model And gate the data in json format</p>
+    <a href="/persons/" class="button">View Persons</a><br>
+    <hr>
+    <p>Here we create a api with the help of rest frame work</p>
+    <a href="/api/v1/home/" class="button">REST Framework</a>
 </body>
 </html>

@@ -3,16 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>REST API Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: lightblue;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #444;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            background-color: rgb(22, 126, 161);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .endpoint {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>REST API Dashboard</h1>
 
-    <button><a href="/api/v1/pepoles/">Pepoles</a></button><br></body>
-    <h1>Gererics</h1>
-    <button><a href="/api/v1/pepoleList/">List View</a></button><br>
-    <button><a href="/api/v1/pepoleDetail/">Retrive View</a> </button><br>
-    <button><a href="/api/v1/pepoles/create/">create view</a> </button><br>
-    <button><a href="/api/v1/pepoles/">update View</a> </button><br>
-    <button><a href="/api/v1/pepoles/">Distroy View</a> </button><br>
+        <!-- General Introduction -->
+        <div class="section">
+            <p>Here We creates REST API create a model name pepole and use modelviewset</p>
+            <a href="/api/v1/pepoles/" class="button">Pepoles</a>
+            <hr>
+        </div>
+
+        <!-- Generics Section -->
+        <div class="section">
+            <h2>Generics</h2>
+
+            <div class="endpoint">
+                <p>This is List View Generic, Used to retrieve a list of objects</p>
+                <a href="/api/v1/pepoleList/" class="button">List View</a>
+                <hr>
+            </div>
+
+            <div class="endpoint">
+                <p>This is Retrieve View Generic, Used to retrieve a single object by its ID. You need to type the ID after clicking</p>
+                <a href="/api/v1/pepoleDetail/" class="button">Retrieve View</a>
+                <hr>
+            </div>
+
+            <div class="endpoint">
+                <p>This is Create View, Used to create a new object.</p>
+                <a href="/api/v1/pepoles/create/" class="button">Create View</a>
+                <hr>
+            </div>
+
+            <div class="endpoint">
+                <p>This is Update View Generic, Used to update an existing object. You must type ID/update/</p>
+                <a href="/api/v1/pepoles/" class="button">Update View</a>
+                <hr>
+            </div>
+
+            <div class="endpoint">
+                <p>This is Destroy View, Used to delete an object. You must type 'ID/delete/'</p>
+                <a href="/api/v1/pepoles/" class="button">Destroy View</a>
+                <hr>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
