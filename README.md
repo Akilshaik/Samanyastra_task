@@ -1,21 +1,16 @@
 # Samanyastra Task
 
-This repository contains the completed tasks for the Samanyastra project.
+This repository contains my completed tasks for the Samanyastra project.
 
-## Completed Tasks:
+## Completed Tasks
 
-1. **Rendering HTML File**: The HTML file rendering functionality has been implemented and is working as expected.
-   
-2. **Returning JSON Data for Health**: A REST API endpoint has been created to return health data in JSON format.
+- **Rendering HTML file**: Completed the task of rendering the HTML file.
+- **Returning JSON data for health**: Successfully implemented the endpoint to return health data in JSON format.
+- **Creating a user model**: Created the user model and implemented functionality to retrieve user data in JSON format.
+- **REST API**: Developed and implemented REST APIs for various functionalities.
+- **API Testing with Postman**: Tested the API endpoints using Postman to ensure correctness and functionality.
+- **Generics**: Applied Django generics for simplifying views and enhancing code reusability.
+- **.env Configuration**: Successfully set up the .env file for environment variable management.
 
-3. **Creating a User Model**: A custom user model has been created to handle user data.
+Feel free to explore the repository and let me know if you have any questions!
 
-4. **Getting User Data in JSON Format**: User data is returned in JSON format via API.
-
-5. **REST API**: The entire project is built using REST API principles for data interaction.
-
-6. **Generics**: Generic views have been implemented for CRUD operations.
-
-7. **.env Configuration**: Environment variables have been set up for project configuration.
-   
-Feel free to explore the repository and refer to the code and documentation for more details.
