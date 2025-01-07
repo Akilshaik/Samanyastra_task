@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from firstapp.models import Person
+from apps.firstapp.models import Person
 
 
 # Create your views here.

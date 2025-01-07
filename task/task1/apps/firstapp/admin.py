@@ -1,5 +1,5 @@
 from django.contrib import admin
-from firstapp.models import Person
+from apps.firstapp.models import Person
 
 # Register your models here.
 

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from api.models import pepoles
+from apps.apiapp.models import pepoles
 
 # Register your models here.
 class pepolesadmin(admin.ModelAdmin):

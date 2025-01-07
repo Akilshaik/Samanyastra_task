@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets, generics
-from api.models import pepoles
-from api.serializers import pepolesSerializers
+from apps.apiapp.models import pepoles
+from apps.apiapp.serializers import pepolesSerializers
 
 # Create your views here.
 def homepage(request):

@@ -1,5 +1,5 @@
 from django.urls import path,include
-from api.views import pepolesViewSet,pepoleList,pepoleDetail,pepolesCreateView,pepolesDeleteView,pepolesUpdateView,homepage
+from apps.apiapp.views import pepolesViewSet,pepoleList,pepoleDetail,pepolesCreateView,pepolesDeleteView,pepolesUpdateView,homepage
 from rest_framework import routers
 
 router= routers.DefaultRouter()

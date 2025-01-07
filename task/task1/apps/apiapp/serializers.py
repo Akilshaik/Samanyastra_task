@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from api.models import pepoles
+from apps.apiapp.models import pepoles
 
 class pepolesSerializers(serializers.HyperlinkedModelSerializer):
     p_id=serializers.ReadOnlyField()
