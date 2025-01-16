@@ -22,4 +22,6 @@ urlpatterns = [
     path('',include('apps.firstapp.urls')),
     path('api/v1/',include('apps.apiapp.urls')),
     path('auth_app/',include('apps.auth_app.urls')),
+    path('jwt_auth/',include('apps.jwt_auth.urls')),
+
 ]

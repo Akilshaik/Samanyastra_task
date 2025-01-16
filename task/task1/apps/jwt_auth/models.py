@@ -1,13 +1,20 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from django.utils.translation import ugettext_lazy as _
 
 
 # Create your models here.
 
 class CustomUser(AbstractUser):
-    username=None
-    email = models.EmailField(_('email address'), unique=True)
+    bio=models.TextField(blank=True, null=True)
 
-    USERNAME_FIELD='email'
-    REQUIRED_FIELDS=[]
+    groups = models.ManyToManyField(
+        'auth.Group', 
+        related_name='customuser_set',  # custom related name
+        blank=True
+    )
+
+    user_permissions = models.ManyToManyField(
+        'auth.Permission',
+        related_name='customuser_permissions',  # custom related name
+        blank=True
+    )
