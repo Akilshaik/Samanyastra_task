@@ -8,7 +8,7 @@ from .serializers import CustomUserSerializers,DashboardSerializers
 from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth import authenticate
 
-
+ 
 
 class RegisterView(APIView):
     def post(self, request):
